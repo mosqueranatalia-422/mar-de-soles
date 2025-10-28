@@ -1,0 +1,424 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Lora&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.encabezado{
+    width: 100%;
+    height: 30vh;
+   font-family: 'Poppins', sans-serif;
+   background-color: #FFEBF9;
+}
+
+.titulo{
+    position: absolute;
+    left: 60%;
+    top: -15px;
+    font-size: 55px;
+    color: white;
+   font-family: 'Poppins', sans-serif;
+  
+}
+
+.titulo a:hover{
+  color: #ef45a8;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    right: 90%;
+    position: absolute;
+    margin-top: 13px;
+}
+
+.slogan{
+    left: 10%;
+    position: absolute;
+    top: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.DESCUBRE{
+left: 10%;
+    position: absolute;
+    top: 85px;
+    font-size: 10px;
+    color:  #E3A8BD;
+   font-family: 'Poppins', sans-serif;
+}
+
+
+.cart {
+  position: absolute;  
+  top: 40px;           
+  right: -130px;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: auto;
+}
+
+.cart_2{
+  position: absolute; 
+  top: 40px;          
+  right: -70px;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: auto;
+}
+
+.botones-contenedor {
+  display: flex;
+  justify-content: center;      
+  gap: 250px;                  
+  margin-top:0px;
+  position: absolute;
+  top: 20%;  
+  left: 30%;
+}
+
+.botones-contenedor .btn {
+  padding: 10px 10px;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
+.botones-contenedor .btn:hover {
+  background-color: #ddd;
+}
+
+.btn-ver {
+  background-color: #FFC7C2;
+}
+
+.btn-compra {
+  background-color: #E2ECFF;
+}
+
+.iconos-lista {
+  display: flex;
+  justify-content: center;    
+  gap: 290px;                   
+  margin-top: 50px;           
+}
+
+.icono-item {
+  display: flex;
+  flex-direction:row;          
+  align-items: center;
+}
+
+.icono-item img {
+  margin-bottom: 0;   
+  margin-right: 10px; 
+}
+
+.icono-item p {
+  font-size: 15px;            
+  margin: 0;
+  line-height: 1.2;
+}
+
+.productos-lista {
+  display: flex;
+  justify-content: center;  
+  gap:20px;     
+  padding: 12px;            
+  width: 100%;       
+}
+
+.producto-item{
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+.producto-item img {
+  width: 100%;
+  border-radius: 10px;           
+}
+
+.producto-item h3 {
+  margin: 13px 0 4px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.producto-item p {
+  margin: 0;
+  color: #555;
+  text-align: center;
+}
+
+.imagenes-2{
+  display: flex;
+  justify-content: center;  
+  gap: 20px;                 
+  padding: 0px 0;  
+}
+
+.arreglar-item{
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.arreglar-item img {
+  width: 100%;
+  border-radius: 10px;   
+}
+
+.arreglar-item h3{
+   margin: 1px 0 1px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.arreglar-item p{
+  margin: 0;
+  color: #555;
+  text-align: center;
+}
+
+.productos-lista h4{
+  box-sizing: border-box;
+  margin: 3px;
+  text-align: center;
+ font-family: 'Lora', serif;
+
+}
+.arreglar-item h4{
+  box-sizing: border-box;
+  margin: 3px;
+  text-align: center;
+ font-family: 'Lora', serif;
+}
+
+.linea-superior {
+  position: absolute;
+  top: 90;
+  width: 250vh;       
+  height: 2px;          
+  background-color: #222; 
+  margin-top: 660px;       
+}
+
+
+.testimonio {
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  gap: 40px;                   
+  max-width: 900px;            
+  margin: 60px auto;          
+  padding: 0 20px;   
+  border-top: 1px;          
+}
+
+.testimonio .imagen img {
+  width: 250px;
+  border-radius: 8px;
+  height: auto;
+  
+}
+
+.testimonio .texto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000;
+  max-width: 350px;
+}
+
+.testimonio .texto p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.registro-descuento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  
+   
+}
+
+.regalo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.regalo img {
+  width: 40px;
+  height: auto;
+}
+
+.regalo p {
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+
+ #whatsapp-link {
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;     
+    z-index: 1000;   
+}
+
+#whatsapp-icon {
+    width: 70px;     
+    height: 70px;   
+    border-radius: 50%;  
+}
+
+.pie-pagina{
+  background-color: #f5d3ea;
+  width: 100%;
+    height: 20vh;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+
+.formulario_2 {
+  max-width: 600px;
+  margin: 20px auto;
+   font-family: 'Poppins', sans-serif;
+}
+
+.formulario_2 label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.formulario_2 input[type="text"],
+.formulario_2 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formulario_2 textarea {
+  height: 120px; 
+  resize: vertical; 
+}
+
+.formulario_2 button {
+  background-color: #E2ECFF;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario_2 button:hover {
+  background-color: #f5d3ea;
+}
+
+.footer {
+  background-color: #f5d3ea;
+  color: #fff; 
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  height: 100px;
+}
+
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff7fa6; /* Color rosado al pasar */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer-2{
+
+  text-align: center;
+}
+ 
+.imagenes{
+  width: 35px ;
+  height: 35px;
+}
+
+
+.copyright{
+  margin-top: 10px;
+  margin-left: 480px;
+  color: #000;
+}
+
+
