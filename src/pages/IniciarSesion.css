@@ -1,0 +1,203 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #FFC7C2; 
+  margin-bottom: 20px;
+     font-family: 'Poppins', sans-serif;
+
+}
+
+.titulo {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inputBox {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  background: white
+}
+
+.inputBox label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: black;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.inputBox input:focus + label,
+.inputBox input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: black;
+  background: #fff;
+  padding: 0 4px;
+}
+
+.enter {
+  background: #a2b0c9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.enter:hover {
+  background: #f0d9e9;
+}
+
+.extra-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.extra-links a {
+  font-size: 0.9rem;
+  color: black ;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+
+.footer {
+  background: #f5d3ea;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-2 {
+  margin-bottom: 10px;
+}
+
+.imagenes {
+  width: 28px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #0d0d0d;
+}
+
+
+/* Modal fondo */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del modal */
+.modal-contenido {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.modal-contenido h2 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.modal-contenido p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.modal-contenido input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.botones button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#cancelarBtn {
+  background-color: #e4e6eb;
+}
+
+#buscarBtn {
+  background-color: #145dbf;
+  color: white;
+}
+
+#buscarBtn:hover {
+  background-color: #f5d3ea;
+  
+}

@@ -17,7 +17,7 @@ const HomePage = () => {
       <Testimonials />
       <Footer />
 
-      {/* WhatsApp Floating Button */}
+      {/* Botón flotante de WhatsApp */}
       <a
         href="https://w.app/mardsoles_com"
         target="_blank"
