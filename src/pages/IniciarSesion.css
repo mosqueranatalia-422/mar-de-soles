@@ -1,90 +1,149 @@
+/* ====== ESTILO GENERAL ====== */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f9fafc;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #f9fafc, #f5d3ea);
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
+/* ====== CONTENEDOR DEL LOGIN ====== */
 .login-container {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
+/* ====== TARJETA ====== */
 .login-card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  width: 350px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 50px 40px 60px;
+  width: 100%;
+  max-width: 380px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
-.logo {
-  font-size: 1.8rem;
-  color: #FFC7C2; 
-  margin-bottom: 20px;
-     font-family: 'Poppins', sans-serif;
+/* Pequeña base debajo de la tarjeta (efecto moderno) */
+.login-card::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
+/* ====== LOGO Y TÍTULO ====== */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFC7C2;
+  margin-bottom: 10px;
 }
 
 .titulo {
   font-size: 1rem;
-  margin-bottom: 20px;
-  color: #333;
+  color: #555;
+  margin-bottom: 30px;
 }
 
+/* ====== ICONO DE USUARIO ====== */
+.login-icon {
+  background-color: #f0d9e9;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.login-icon i {
+  font-size: 32px;
+  color: #a2b0c9;
+}
+
+/* ====== INPUTS ====== */
 .inputBox {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
 .inputBox input {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 8px;
+  background: #f9fafc;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
   outline: none;
   font-size: 1rem;
-  background: white
+  color: #333;
+}
+
+.inputBox input:focus {
+  box-shadow: 0 0 0 2px #f5d3ea;
 }
 
 .inputBox label {
   position: absolute;
-  left: 12px;
-  top: 12px;
-  color: black;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: #777;
   font-size: 0.9rem;
   pointer-events: none;
   transition: 0.3s;
 }
 
-.inputBox input:focus + label,
-.inputBox input:not(:placeholder-shown) + label {
-  top: -8px;
-  left: 10px;
-  font-size: 0.75rem;
-  color: black;
-  background: #fff;
-  padding: 0 4px;
+/* Íconos dentro del input */
+.inputBox i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a2b0c9;
+  font-size: 1.1rem;
 }
 
+/* Efecto al escribir o enfocar */
+.inputBox input:focus + label,
+.inputBox input:not(:placeholder-shown) + label {
+  top: 0;
+  left: 40px;
+  font-size: 0.75rem;
+  color: #a2b0c9;
+}
+
+/* ====== BOTÓN DE ENTRAR ====== */
 .enter {
+  margin-top: 10px;
   background: #a2b0c9;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 12px;
   width: 100%;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  letter-spacing: 0.5px;
 }
 
 .enter:hover {
@@ -92,112 +151,19 @@ body {
 }
 
 .extra-links {
-  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  gap: 0px; /* 💕 antes estaba 20px, ahora mucho más juntitos */
+  margin-top: 10px;
 }
 
 .extra-links a {
-  font-size: 0.9rem;
-  color: black ;
   text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .extra-links a:hover {
-  text-decoration: underline;
-}
-
-
-.footer {
-  background: #f5d3ea;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.footer-2 {
-  margin-bottom: 10px;
-}
-
-.imagenes {
-  width: 28px;
-  margin: 0 8px;
-  cursor: pointer;
-}
-
-.copyright {
-  font-size: 12px;
-  color: #0d0d0d;
-}
-
-
-/* Modal fondo */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  justify-content: center;
-  align-items: center;
-}
-
-/* Caja del modal */
-.modal-contenido {
-  background: #fff;
-  border-radius: 10px;
-  padding: 25px 30px;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.modal-contenido h2 {
-  font-size: 20px;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-.modal-contenido p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.modal-contenido input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.botones {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.botones button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-#cancelarBtn {
-  background-color: #e4e6eb;
-}
-
-#buscarBtn {
-  background-color: #145dbf;
-  color: white;
-}
-
-#buscarBtn:hover {
-  background-color: #f5d3ea;
-  
+  color: #f28b82;
 }
