@@ -1,0 +1,107 @@
+:root {
+  --rosado: #ffc7c2;
+  --boton: #a2b0c9;
+  --boton-hover: #f0d9e9;
+  --texto: #333;
+  --gris-claro: #f8f8f8;
+}
+
+body {
+  background: linear-gradient(135deg, #fff8f8, #f7e7ee);
+  font-family: "Poppins", sans-serif;
+}
+
+.registro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registro-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  text-align: center;
+}
+
+.registro-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto);
+  font-weight: bold;
+  font-size: 28px;
+  gap: 10px;
+}
+
+.punto {
+  color: #ffc7c2;
+  font-size: 20px;
+}
+
+.registro-subtitulo {
+  color: #777;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.registro-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fila {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: var(--gris-claro);
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--rosado);
+}
+
+.btn-enviar {
+  background-color: var(--boton);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--boton-hover);
+}
+
+.nota-final {
+  margin-top: 15px;
+  color: #777;
+  font-size: 13px;
+}
+
+.enlace-login {
+  color: var(--rosado);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.enlace-login:hover {
+  text-decoration: underline;
+}
