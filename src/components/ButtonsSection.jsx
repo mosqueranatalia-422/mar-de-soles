@@ -4,7 +4,7 @@ const ButtonsSection = () => {
   return (
     <div className="botones-contenedor">
       <a
-        href="/img/Catalogo mar de soles_20250815_110306_0000.pdf"
+        href="/src/assets/img/Catalogo mar de soles_20250815_110306_0000.pdf"
         className="btn btn-ver"
       >
         VER PRODUCTOS

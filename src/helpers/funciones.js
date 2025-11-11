@@ -47,3 +47,49 @@ export function verificarSesion(navigate) {
     navigate("/registro");
   }
 }
+
+// ==============================
+// ✅ MANEJO DE EVENTO DE ENVÍO DE OPINIONES
+// ==============================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("btnEnviar");
+
+  // ✅ Validación: si no existe el botón, no ejecutar nada
+  if (!btn) {
+    console.warn("btnEnviar no encontrado en este documento.");
+    return;
+  }
+
+  btn.addEventListener("click", () => {
+    console.log("Botón clickeado ✅");
+
+    const nombre = document.getElementById("nombre")?.value.trim();
+    const opinion = document.getElementById("opinion")?.value.trim();
+
+    if (!nombre || !opinion) {
+      alert("Por favor, completa tu nombre y tu opinión.");
+      return;
+    }
+
+    // Recuperar opiniones anteriores
+    let opiniones = JSON.parse(localStorage.getItem("opiniones")) || [];
+
+    // Crear la nueva opinión con fecha
+    let fecha = new Date().toLocaleString("es-CO", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    opiniones.push({ nombre, opinion, fecha });
+
+    // Guardar en localStorage
+    localStorage.setItem("opiniones", JSON.stringify(opiniones));
+
+    // Redirigir
+    window.location.href = "opiniones.html";
+  });
+});

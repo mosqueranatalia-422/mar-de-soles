@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import IniciarSesion from "./pages/IniciarSesion"; // 👈 este es el nuevo componente
+import IniciarSesion from "./pages/IniciarSesion";
+import Promociones from "./pages/Promociones";
+import Opiniones from "./pages/Opiniones";
 import "./App.css";
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/iniciar-sesion" element={<IniciarSesion />} />
+        <Route path="/promociones" element={<Promociones />} />
+        <Route path="/opiniones" element={<Opiniones />} />
       </Routes>
     </Router>
   );

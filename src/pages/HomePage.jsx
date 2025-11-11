@@ -19,7 +19,7 @@ const HomePage = () => {
 
       {/* Botón flotante de WhatsApp */}
       <a
-        href="https://w.app/mardsoles_com"
+        href="https://w.app/mar_de_soles"
         target="_blank"
         id="whatsapp-link"
         rel="noreferrer"
