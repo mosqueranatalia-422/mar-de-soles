@@ -19,7 +19,6 @@ const IniciarSesion = () => {
     <div className="login-container">
       <div className="login-card">
         <h1 className="logo">MardeSoles</h1>
-        <h2 className="titulo">Inicia sesión en tu cuenta</h2>
 
         <div className="inputBox">
           <input
@@ -53,6 +52,7 @@ const IniciarSesion = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
